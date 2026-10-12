@@ -1,4 +1,4 @@
-# PS-Agents: Practical Exercise 3 (ICS 3202)
+# PS-Agents: AI Practical Exercise 3 
 
 **Members:**
 - Sufi Hafswa Yusuf – 186400
