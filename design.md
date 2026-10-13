@@ -42,14 +42,30 @@
 
 ## Question 2: Graph and Search Tree
 
-_(Add your diagrams here.)_
+### 2.1 Directed Graph
 
----
+
+### 2.1 Directed Graph
+
+<img width="284" height="389" alt="image" src="https://github.com/user-attachments/assets/9b257785-982e-4110-9565-107027b859e4" />
+
+
+### 2.2 Search Tree
+
+<img width="230" height="329" alt="image" src="https://github.com/user-attachments/assets/d89fabc9-e98c-4c31-a589-527e927bd92a" />
+
 
 ## Question 3: Optimal Path (Nairobi to Kisumu)
 
 _(Add your table of distances and the chosen path here.)_
-
+<CodeBlock language="markdown" editable>
+```mermaid
+graph TD
+    A[Nairobi] --> B[Naivasha]
+    B --> C[Gilgil]
+    C --> D[Nakuru]
+```
+</CodeBlock>
 ---
 
 ## Evidence of Groupwork
