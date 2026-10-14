@@ -52,7 +52,8 @@
 
 ### 2.2 Search Tree
 
-<img width="230" height="329" alt="image" src="https://github.com/user-attachments/assets/d89fabc9-e98c-4c31-a589-527e927bd92a" />
+<img width="242" height="338" alt="image" src="https://github.com/user-attachments/assets/67a45b78-4cd7-496a-b66c-5affffa60acc" />
+
 
 
 ## Question 3: Optimal Path (Nairobi to Kisumu)
