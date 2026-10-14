@@ -44,9 +44,6 @@
 
 ### 2.1 Directed Graph
 
-
-### 2.1 Directed Graph
-
 <img width="284" height="389" alt="image" src="https://github.com/user-attachments/assets/9b257785-982e-4110-9565-107027b859e4" />
 
 
