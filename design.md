@@ -55,15 +55,56 @@
 
 ## Question 3: Optimal Path (Nairobi to Kisumu)
 
-_(Add your table of distances and the chosen path here.)_
-<CodeBlock language="markdown" editable>
-```mermaid
-graph TD
-    A[Nairobi] --> B[Naivasha]
-    B --> C[Gilgil]
-    C --> D[Nakuru]
-```
-</CodeBlock>
----
+### Distances (Google Maps)
+
+| From | To | Distance (km) |
+|---|---|---|
+| Nairobi | Ruiru | 24.6 |
+| Ruiru | Thika | 21.4 |
+| Thika | Nyeri | 113 |
+| Nyeri | Nyahururu | 104 |
+| Nyahururu | Nakuru | 63.3 |
+| Nairobi | Naivasha | 91 |
+| Naivasha | Gilgil | 30.4 |
+| Gilgil | Nyahururu | 67 |
+| Gilgil | Nakuru | 42.6 |
+| Nakuru | Kericho | 107 |
+| Kericho | Kisumu | 84 |
+| Nakuru | Eldoret | 156 |
+| Eldoret | Webuye | 71.6 |
+| Webuye | Kakamega | 48.5 |
+| Kakamega | Kisumu | 53.4 |
+
+
+### Optimal Path
+
+| Leg | Distance (km) | Cumulative g(n) |
+|---|---|---|
+| Nairobi → Naivasha | 91 | 91 |
+| Naivasha → Gilgil | 30.4 | 121.4 |
+| Gilgil → Nakuru | 42.6 | 164.0 |
+| Nakuru → Kericho | 107 | 271.0 |
+| Kericho → Kisumu | 84 | **355.0** |
+
+
+### Uniform-Cost Search
+
+| Step | Node expanded | g(n) | Added to frontier |
+|---|---|---|---|
+| 1 | Nairobi | 0 | Ruiru 24.6, Naivasha 91 |
+| 2 | Ruiru | 24.6 | Thika 46.0 |
+| 3 | Thika | 46.0 | Nyeri 159.0 |
+| 4 | Naivasha | 91 | Gilgil 121.4 |
+| 5 | Gilgil | 121.4 | Nyahururu 188.4, Nakuru 164.0 |
+| 6 | Nyeri | 159.0 | Nyahururu 263.0 (discarded, 188.4 is cheaper) |
+| 7 | Nakuru | 164.0 | Kericho 271.0, Eldoret 320.0 |
+| 8 | Nyahururu | 188.4 | Nakuru 251.7 (discarded, 164.0 is cheaper) |
+| 9 | Kericho | 271.0 | Kisumu 355.0 |
+| 10 | Eldoret | 320.0 | Webuye 391.6 |
+| 11 | Kisumu | 355.0 | Goal reached |
+
+
+
+**Optimal path: Nairobi → Naivasha → Gilgil → Nakuru → Kericho → Kisumu = 355.0 km**
 
 ## Evidence of Groupwork
