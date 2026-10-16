@@ -108,3 +108,4 @@
 **Optimal path: Nairobi → Naivasha → Gilgil → Nakuru → Kericho → Kisumu = 355.0 km**
 
 ## Evidence of Groupwork
+![Group Work Evidence](Group%20Work%20Evidence.jpeg)
